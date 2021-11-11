@@ -1,0 +1,29 @@
+NOTE: This txt is containing the following methods description:
+checkOrderByOptions1
+checkOrderByOptions2
+checkOrderByOptions3
+checkOrderByOptions4
+
+Description:
+Verifying that Items are reordered on the page correctly
+
+Steps to reproduce:
+
+    1. Login
+    2. Select to Sort by options: 1-4 (in separate tests)
+    3. Check the order of the items
+
+Expected behaviour/result:
+
+    1. Inventory Page is opened
+    2. The Sort By option has changed to the chosen one
+    3. If the Sorting was from The Highest price to The Lowest price:
+
+        Sauce Labs Fleece Jacket item's price is: $49.99
+        Sauce Labs Backpack item's price is: $29.99
+        Sauce Labs Bolt T-Shirt item's price is: $15.99
+        Test.allTheThings() T-Shirt (Red) item's price is: $15.99
+        Sauce Labs Bike Light item's price is: $9.99
+        Sauce Labs Onesie item's price is: $7.99
+
+        etc...

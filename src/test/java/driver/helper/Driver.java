@@ -23,4 +23,12 @@ public class Driver {
         return driver;
     }
 
+    public static WebDriver getDriver() {
+        return driver;
+    }
+
+    public static WebDriver setDriverToNull() {
+        driver = null;
+        return driver;
+    }
 }

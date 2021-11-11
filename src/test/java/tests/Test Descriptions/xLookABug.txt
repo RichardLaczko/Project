@@ -1,0 +1,14 @@
+Description:
+Check every user names available on the website
+
+Steps to reproduce:
+
+    1. Login with Username x and Place the backpack in the Cart
+    2. Logout and login with Username y
+    3. Check Cart
+
+Expected behaviour/result:
+
+    1. User x has a backpack in the cart
+    2. User y is logged in
+    3. Cart should be EMPTY

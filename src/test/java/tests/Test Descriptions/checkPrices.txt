@@ -1,0 +1,23 @@
+Description:
+Check the Prices of the Items
+
+Steps to reproduce:
+
+    1. Open Web-page (https://www.saucedemo.com/)
+    2. Fill in Username and Password
+    3. Click Login Button
+    4. Verify The prices of every Item
+
+Expected behaviour/result:
+
+    1. Web-page is opened correctly without a problem within 10 sec
+    2. You can write in the Fields and the Password is not shown
+    3. Inventory Page is opened
+    4. Should be the followings:
+
+        Sauce Labs Backpack item's price is: $29.99
+        Sauce Labs Bike Light item's price is: $9.99
+        Sauce Labs Bolt T-Shirt item's price is: $15.99
+        Sauce Labs Fleece Jacket item's price is: $49.99
+        Sauce Labs Onesie item's price is: $7.99
+        Test.allTheThings() T-Shirt (Red) item's price is: $15.99

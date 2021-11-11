@@ -1,7 +1,11 @@
 package tests;
 
+import org.junit.FixMethodOrder;
 import org.junit.Test;
+import org.junit.runners.MethodSorters;
 import screens.*;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class LoginPageTests extends BaseTest {
 
@@ -15,13 +19,12 @@ public class LoginPageTests extends BaseTest {
     String ItemLastFromABC = "Test.allTheThings() T-Shirt (Red)";
     String ItemFirstFromABC = "Sauce Labs Backpack";
 
-    public <inventoryPage> inventoryPage logIn(int i) throws InterruptedException {
+    public InventoryPage logIn(int i) throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.enterUsername(CorrectUsername[i])
                 .enterLoginPassword(CorrectPassword);
         InventoryPage inventoryPage = loginPage.goToInventoryPage();
-        Thread.sleep(1000);
-        return (inventoryPage) inventoryPage;
+        return inventoryPage;
     }
 
     @Test
@@ -125,7 +128,7 @@ public class LoginPageTests extends BaseTest {
     }
 
     @Test
-    public void lookABug() throws InterruptedException {
+    public void xLookABug() throws InterruptedException {
         InventoryPage inventoryPage = logIn(0);
         inventoryPage.clickOnBikeLightBuyButton();
         inventoryPage.goBackToTheLoginPage();

@@ -43,7 +43,6 @@ public class LoginPageTests extends BaseTest {
 
     @Test
     public void buyTheBackPack() throws InterruptedException {
-        //logIn(0); //it logins only with this as well.
         InventoryPage inventoryPage = logIn(0);
         inventoryPage.clickOnBackPackBuyButton();
         CartPage cartPage = new InventoryPage().goToCartPage();
@@ -63,12 +62,6 @@ public class LoginPageTests extends BaseTest {
         Thread.sleep(3000);
 
     }
-//clickAllOptionsFromTheBottomUp
-//    @Test
-//    public void selectALL() throws InterruptedException {
-//        InventoryPage inventoryPage = logIn(0);
-//        inventoryPage.clickAllOptionsFromTheBottomUp();
-//    }
 
     @Test
     public void checkOrderByOptions4() throws InterruptedException {
@@ -131,15 +124,15 @@ public class LoginPageTests extends BaseTest {
 
     }
 
-//    @Test
-//    public void lookABug() throws InterruptedException {
-//        InventoryPage inventoryPage = logIn(0);
-//        inventoryPage.clickOnBikeLightBuyButton();
-//        inventoryPage.goBackToTheLoginPage();
-//
-//        InventoryPage secondLogIN = logIn(1);  //we are loging in with a different user
-//        CartPage cartPage = secondLogIN.goToCartPage();
-//        cartPage.checkItemName("");
-//    }
+    @Test
+    public void lookABug() throws InterruptedException {
+        InventoryPage inventoryPage = logIn(0);
+        inventoryPage.clickOnBikeLightBuyButton();
+        inventoryPage.goBackToTheLoginPage();
+
+        InventoryPage secondLogIN = logIn(1);  //we are loging in with a different user
+        CartPage cartPage = secondLogIN.goToCartPage();
+        cartPage.checkItemName("");
+    }
 }
 

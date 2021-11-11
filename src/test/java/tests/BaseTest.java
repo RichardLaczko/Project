@@ -11,15 +11,12 @@ public class BaseTest {
 
     @Before
     public void beforeTest() {
-        driver = Driver.getInstance();
         driver.get("https://www.saucedemo.com/");
     }
 
     @After
     public void afterTest() {
-//        driver=null;
         driver.quit();
-        driver=null;
     }
 
 }

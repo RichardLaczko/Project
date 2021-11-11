@@ -99,23 +99,9 @@ public class InventoryPage {
     public InventoryPage selectFromSortBy(int index) throws InterruptedException {
         sortByList.click();
         Thread.sleep(2000);
+
         sortBy.get(index).click();
         Thread.sleep(2000);
         return this;
     }
-
-    public InventoryPage clickAllOptionsFromTheBottomUp() throws InterruptedException {
-
-//        Select select = new Select(driver.findElement(By.xpath("//select[@class='product_sort_container']")));
-        Select select = new Select((WebElement) driver.findElements
-                                                    (By.xpath("//select[@class='product_sort_container']")));
-
-        for(int i=3;i>=0;i--){
-            sortByList.click();
-            select.selectByIndex(i);
-            Thread.sleep(2000);
-        }
-        return this;
-    }
-
 }

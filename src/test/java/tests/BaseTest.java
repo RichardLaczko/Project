@@ -9,14 +9,19 @@ public class BaseTest {
 
     WebDriver driver = Driver.getInstance();
 
+    public static WebDriver getDriver() {
+        return Driver.getDriver();
+    }
+
     @Before
     public void beforeTest() {
-        driver.get("https://www.saucedemo.com/");
+        Driver.getInstance().get("https://www.saucedemo.com/");
     }
 
     @After
     public void afterTest() {
-        driver.quit();
+        getDriver().quit();
+        Driver.setDriverToNull();
     }
 
 }

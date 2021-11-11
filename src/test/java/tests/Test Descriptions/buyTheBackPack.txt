@@ -1,0 +1,28 @@
+Description:
+Verifying that Cart remembers what You placed in it after Log Out
+
+Steps to reproduce:
+
+    1. Login
+    2. Place 1st (backpack) item in the cart
+    3. Click the Cart and verify it's title
+    4. Click "CHECKOUT" button
+    5. Fill in First Name
+               Last Name
+               Zip/Postal Code
+    6. Click "CONTINUE" button
+    7. Click "FINISH" button
+    8. Check final checkout page Title
+    9. Go back to the Inventory Page
+
+Expected behaviour/result:
+
+    1. Inventory Page is opened
+    2. Cart has the backpack in it
+    3. Should be: "YOUR CART"
+    4. Checkout second page is opened
+    5. All texts are visible
+    6. Checkout third page is opened
+    7. Final Checkout Page is opened
+    8. Should be: "CHECKOUT: COMPLETE!"
+    9. Inventory page is opened and the Cart is EMPTY

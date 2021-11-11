@@ -1,0 +1,16 @@
+Description:
+Verifying that Cart remembers what You placed in it after Log Out
+
+Steps to reproduce:
+
+    1. Login
+    2. Place 1st (backpack) item in the cart
+    3. Log out
+    4. Log in again and check the cart
+
+Expected behaviour/result:
+
+    1. Inventory Page is opened
+    2. Cart has the backpack in it
+    3. Login Page is shown
+    4. When opening the cart the Backpack should be in it

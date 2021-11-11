@@ -1,0 +1,12 @@
+Description:
+Check every user names available on the website
+
+Steps to reproduce:
+
+    1. Try to log in with every username
+
+Expected behaviour/result:
+
+    1. With the following you can: "standard_user", "problem_user", "performance_glitch_user"
+       With "locked_out_user" You got the followin error:
+       "Epic sadface: Sorry, this user has been locked out.";

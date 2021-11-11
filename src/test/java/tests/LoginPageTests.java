@@ -24,6 +24,7 @@ public class LoginPageTests extends BaseTest {
         loginPage.enterUsername(CorrectUsername[i])
                 .enterLoginPassword(CorrectPassword);
         InventoryPage inventoryPage = loginPage.goToInventoryPage();
+        inventoryPage.checkProductsLabel("PRODUCTS");
         return inventoryPage;
     }
 
